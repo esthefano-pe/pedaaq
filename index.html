@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peda Roulette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔥 PEDA ROULETTE 🔥</h1>
+            <p>Lo que pasa en el juego, se queda en el juego.</p>
+        </header>
+
+        <section class="players-section">
+            <div class="input-group">
+                <input type="text" id="playerName" placeholder="Nombre de la víctima...">
+                <button id="addPlayerBtn">Agregar</button>
+            </div>
+            <ul id="playersList"></ul>
+        </section>
+
+        <section class="controls-section">
+            <div class="filters">
+                <select id="levelSelect">
+                    <option value="suave">Nivel: Tranqui 🍻</option>
+                    <option value="caliente">Nivel: Caliente 🌶️</option>
+                    <option value="extremo">Nivel: Extremo 😈</option>
+                </select>
+                <select id="typeSelect">
+                    <option value="cualquiera">Sorpréndeme 🎲</option>
+                    <option value="verdad">Solo Verdades 🗣️</option>
+                    <option value="reto">Solo Retos 🎯</option>
+                </select>
+            </div>
+            <button id="playBtn" class="neon-btn">¡GIRAR LA RULETA!</button>
+        </section>
+
+        <section class="result-section">
+            <div id="resultBox" class="hidden">
+                <h2 id="targetPlayer">¿Quién será?</h2>
+                <p id="challengeText">Agrega jugadores y dale a girar...</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
